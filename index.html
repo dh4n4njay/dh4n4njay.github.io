@@ -4,272 +4,711 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dhananjay | Fluorescent Materials | Central University of Kerala</title>
+  <meta name="description" content="Academic portfolio of Dhananjay, PhD scholar at the Functional Materials Laboratory, Central University of Kerala. Research on fluorescent materials, computational photophysics, and machine learning for chemistry." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dhananjay | Fluorescent Materials | Central University of Kerala" />
+  <meta property="og:description" content="PhD scholar researching fluorescent materials, computational photophysics, and machine learning for chemistry." />
+  <meta property="og:url" content="https://dh4n4njay.github.io/" />
+  <meta property="og:image" content="https://dh4n4njay.github.io/assets/images/profile.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧪</text></svg>" />
+  <script>
+    /* apply the stored theme before first paint to avoid a dark flash */
+    try {
+      if (localStorage.getItem('phd-site-theme') === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    } catch (e) {}
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
 
-  <nav id="nav">
+  <nav class="navbar" id="navbar" aria-label="Primary">
     <div class="nav-inner">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#conferences">Conferences</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="theme-toggle-wrap">
-        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme">
-          <span class="sr-only">Toggle light or dark mode</span>
-          <svg class="theme-icon sun-icon active" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-          </svg>
-          <svg class="theme-icon moon-icon active" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-          </svg>
-        </button>
+      <a href="#" class="nav-logo">Dhananjay<span>.</span></a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#conferences">Conferences</a>
+        <a href="#skills">Skills</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
       </div>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+        </svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
-  <section id="about">
-    <span class="hero-badge">PhD Scholar</span>
-    <h1>Dhananjay</h1>
-    <p class="role">Functional Materials Laboratory, Central University of Kerala </p>
-    <div class="glow-line"></div>
-    <p class="bio">
-      I am a PhD scholar at Central University of Kerala, working on the synthesis, characterization, and applications of fluorescent materials. My research focuses on understanding fluorescence mechanisms via computational tools and developing new materials for sensing applications.
-    </p>
-  </section>
-
-  <section id="research">
-    <h1>Research Interests</h1>
-    <p class="subtitle">Areas I focus on</p>
-    <div class="card-grid">
-      <div class="card">
-        <h3>Fluorescent Materials</h3>
-        <p>Synthesis and tuning of fluorescent probes for sensing applications.</p>
-      </div>
-      <div class="card">
-        <h3>Optical Characterization</h3>
-        <p>Spectroscopy, lifetime measurements, and understanding structure–property relationships in emissive systems.</p>
-      </div>
-      <div class="card">
-        <h3>Artificial Intelligence and Machine Learning</h3>
-        <p>Using AI/ML to fill in the gaps left ahead by Density Functional Theory for .</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="conferences">
-    <h1>Conferences & Workshops</h1>
-    <p class="subtitle">Talks and participation</p>
-    <div class="item-list">
-      <div class="item">
-        <span class="item-num">1</span>
-        <div>
-          <h3>18th DAE-BRNS Biennial Trombay Symposium on Radiation and Photochemistry (TSRP-2026)</h3>
-          <p class="meta">Bhabha Atomic Research Centre, Mumbai · January 6th to 10th, 2026</p>
-          <p>Poster presentation titled "Data Driven Prediction of Optical Properties of Organic Chromophores: A Comparative Study of Different ML Models".</p>
+  <header class="hero">
+    <canvas id="mol-canvas" aria-hidden="true"></canvas>
+    <div class="container hero-inner">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="hero-badge"><span class="dot"></span> PhD Scholar · Functional Materials Laboratory</p>
+          <h1>Dhananjay</h1>
+          <p class="hero-sub">Fluorescent Materials &amp; Computational Photophysics</p>
+          <p class="hero-desc">
+            I am a PhD scholar at Central University of Kerala, working on the synthesis, characterization, and applications of fluorescent materials. My research focuses on understanding fluorescence mechanisms via computational tools and developing new materials for sensing applications.
+          </p>
+          <div class="hero-cta">
+            <a href="#research" class="btn-solid">View Research ↗</a>
+            <a href="#contact" class="btn-ghost">Get in Touch</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <p class="stat-num">02</p>
+              <p>Publications</p>
+            </div>
+            <div class="stat">
+              <p class="stat-num">06</p>
+              <p>Conferences</p>
+            </div>
+            <div class="stat">
+              <p class="stat-num">03</p>
+              <p>Research Areas</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="item">
-        <span class="item-num">2</span>
-        <div>
-          <h3>Indian Council of Chemists 44th Annual National Conference</h3>
-          <p class="meta">KLE Technological University, Hubbali · December 22nd to 24th, 2025</p>
-          <p>Participant</p>
-        </div>
-      </div>
-      <div class="item">
-        <span class="item-num">3</span>
-        <div>
-          <h3>National Symposium on Radiation and Photochemistry (NSRP-2025)</h3>
-          <p class="meta">National Institute of Science Education and Research (NISER), Bhubaneshwar · January 23rd to 25th, 2025</p>
-          <p>Poster presentation titled "Theoretical Exploration of Two-Dimesnional Materials for Optical and Electrical Properties".</p>
-        </div>
-      </div>
-    <div class="item">
-        <span class="item-num">4</span>
-        <div>
-          <h3>Theory and Applications of In-Silico Approach for Materials Modelling</h3>
-          <p class="meta">Central University of Punjab, Bathinda · February 5th to 11th, 2024</p>
-          <p>Participant.</p>
-        </div>
-      </div>
-	</div>
-	
-  </section>
-
-  <section id="publications">
-    <h1>Publications</h1>
-    <p class="subtitle">Journal articles and preprints</p>
-    <div class="item-list">
-      <div class="item">
-        <span class="item-num">1</span>
-        <div>
-          <h3>Unravelling Cyanide Sensing Mechanisms of Colorimetric and Fluorometric Sensors</h3>
-          <p class="meta"> <b><i>Dhananjay</i></b>; Rayudu Surya Sekhar Babu; Gummadi Leela Prabha Anisha, Dr Ravi Kumar Kanaparthi* | NSRP-2025, Vol 37 / 1&2 Page 63-69 Conference review (2025)</p>
-          <p><a href="https://www.israps.org.in/uploads/bulletins/ISRAPS_Bulletin_2025_January_1765599706.pdf" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;">Link</a></p>
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <!-- TODO: replace this dummy image with your real photo (same path, or update src) -->
+            <img src="assets/images/profile.jpg" alt="Dhananjay" />
+          </div>
         </div>
       </div>
     </div>
-	  <div class="item-list">
-      <div class="item">
-        <span class="item-num">2</span>
-        <div>
-          <h3>Green hydrogen: The fuel of tomorrow or a challenge of today?</h3>
-          <p class="meta"> Gummadi Leela Prabha Anisha, Rayudu Surya Shekhar Babu,  <b><i>Dhananjay</i></b>, Sudeena Nadendla, Shashidhar Kasthala, Ravi Kumar Kanaparthi. Next Energy, Volume 11, 2026, 100524, ISSN 2949-821X,</p>
-          <p><a href="https://www.sciencedirect.com/science/article/pii/S2949821X26000141" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;">Link</a></p>
+    <svg class="spectra" viewBox="0 0 1200 170" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="g-abs" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" style="stop-color: var(--excitation);" stop-opacity="0.28" />
+          <stop offset="100%" style="stop-color: var(--excitation);" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="g-em" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" style="stop-color: var(--emission);" stop-opacity="0.3" />
+          <stop offset="100%" style="stop-color: var(--emission);" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+      <path d="M 80,168 C 260,168 300,38 430,38 C 560,38 600,168 780,168 Z" fill="url(#g-abs)" />
+      <path d="M 80,168 C 260,168 300,38 430,38 C 560,38 600,168 780,168" fill="none" style="stroke: var(--excitation);" stroke-opacity="0.65" stroke-width="1.5" />
+      <path d="M 370,168 C 550,168 590,58 720,58 C 850,58 890,168 1070,168 Z" fill="url(#g-em)" />
+      <path d="M 370,168 C 550,168 590,58 720,58 C 850,58 890,168 1070,168" fill="none" style="stroke: var(--emission);" stroke-opacity="0.75" stroke-width="1.5" />
+      <text x="430" y="26" text-anchor="middle" fill-opacity="0.9" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; fill: var(--excitation);">λ abs</text>
+      <text x="720" y="46" text-anchor="middle" fill-opacity="0.9" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; fill: var(--emission);">λ em</text>
+    </svg>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <div class="container">
+        <span class="section-label">About</span>
+        <h2 class="section-title">Chasing Light from Molecules</h2>
+        <div class="about-text">
+          <p>
+            I am a PhD scholar at the Functional Materials Laboratory, Central University of Kerala, working on the synthesis, characterization, and applications of <em>fluorescent materials</em>. What a molecule does with the light it absorbs; where the energy goes, what colour comes back is the question at the centre of my work.
+          </p>
+          <p>
+            My research combines wet-lab synthesis and optical characterization with computational tools: quantum-chemical calculations to understand fluorescence mechanisms, and machine-learning models to predict optical properties faster than theory alone allows. The goal is new materials for sensing applications, designed with understanding rather than trial and error.
+          </p>
+        </div>
+        <div class="interests-list">
+          <span class="interest-tag">Fluorescent probes</span>
+          <span class="interest-tag">Photophysics</span>
+          <span class="interest-tag">DFT / TD-DFT</span>
+          <span class="interest-tag">Machine learning for chemistry</span>
+          <span class="interest-tag">Chemical sensing</span>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="blog">
-    <h1>Blog</h1>
-    <p class="subtitle">Notes and updates</p>
-    <div class="blog-preview card-grid">
-      <div class="card">
-        <a href="#">
-          <h3>Why fluorescent materials matter</h3>
-          <p class="meta">Date</p>
-          <p>Coming soon</p>
-        </a>
+    <section id="research">
+      <div class="container">
+        <span class="section-label">Research</span>
+        <h2 class="section-title">Areas of Investigation</h2>
+        <p class="section-desc">Three connected threads: making emissive molecules, understanding their excited states, and learning to predict them.</p>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v6L4.7 18.4A2 2 0 0 0 6.5 21h11a2 2 0 0 0 1.8-2.6L14 8V2" /><path d="M8.5 2h7" /><path d="M7.2 15h9.6" /></svg>
+            </div>
+            <h3>Fluorescent Probes for Ion Sensing</h3>
+            <p>Small-molecule colorimetric and fluorometric probes that signal specific ions through visible colour changes or emission switching, centred on cyanide detection.</p>
+            <details>
+              <summary>Read more</summary>
+              <!-- TODO: replace placeholder writeup with your own words -->
+              <p>My work in this area examines how the sensing event alters the electronic structure of the chromophore. Understanding the mechanism charge transfer, nucleophilic addition, or hydrogen-bonding interactions guides the rational design of probes with better selectivity and lower detection limits.</p>
+              <figure>
+                <svg viewBox="0 0 340 160" role="img" aria-label="Sensing scheme: a non-emissive probe binds cyanide and switches its fluorescence on">
+                  <polygon points="98,80 84,104 56,104 42,80 56,56 84,56" fill="none" style="stroke: var(--muted);" stroke-width="1.8" />
+                  <text x="70" y="127" text-anchor="middle" class="fig-label">probe (off)</text>
+                  <text x="115" y="85" text-anchor="middle" class="fig-label" style="font-size: 14px;">+</text>
+                  <circle cx="143" cy="80" r="13" fill="none" style="stroke: var(--excitation);" stroke-width="1.8" />
+                  <text x="143" y="83.5" text-anchor="middle" style="fill: var(--excitation); font-family: var(--mono); font-size: 8.5px;">CN⁻</text>
+                  <text x="143" y="127" text-anchor="middle" class="fig-label">analyte</text>
+                  <line x1="168" y1="80" x2="198" y2="80" style="stroke: var(--muted);" stroke-width="1.5" />
+                  <polygon points="198,76 206,80 198,84" style="fill: var(--muted);" />
+                  <polygon points="278,80 264,104 236,104 222,80 236,56 264,56" fill="none" style="stroke: var(--emission);" stroke-width="2" />
+                  <circle cx="264" cy="56" r="9" fill-opacity="0.25" style="fill: var(--excitation); stroke: var(--excitation);" stroke-width="1.5" />
+                  <line x1="279" y1="47" x2="293" y2="33" style="stroke: var(--emission);" stroke-width="1.5" />
+                  <line x1="286" y1="58" x2="304" y2="52" style="stroke: var(--emission);" stroke-width="1.5" />
+                  <line x1="272" y1="41" x2="277" y2="24" style="stroke: var(--emission);" stroke-width="1.5" />
+                  <text x="311" y="34" style="fill: var(--emission); font-family: var(--mono); font-size: 10px;">hν′</text>
+                  <text x="250" y="127" text-anchor="middle" class="fig-label">probe·CN⁻ (on)</text>
+                </svg>
+                <figcaption>Turn-on sensing analyte binding switches the probe's emission on.</figcaption>
+              </figure>
+            </details>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 19c2.5 0 2.5-11 5.5-11S10 16 12 16s1.5-6 3.5-6 2 9 6.5 9" /></svg>
+            </div>
+            <h3>Optical Characterization &amp; Photophysics</h3>
+            <p>Steady-state and time-resolved spectroscopy absorption, emission, and lifetimes to build structure–property relationships in emissive systems.</p>
+            <details>
+              <summary>Read more</summary>
+              <!-- TODO: replace placeholder writeup with your own words -->
+              <p>Combining measurement with electronic-structure calculations helps assign the observed transitions and rationalize trends across families of related chromophores how a material's structure shapes its excited-state behaviour.</p>
+              <figure>
+                <svg viewBox="0 0 340 185" role="img" aria-label="Absorption and emission spectra drawn as mirror-image bands separated by the Stokes shift">
+                  <line x1="36" y1="150" x2="320" y2="150" style="stroke: var(--hairline);" stroke-width="1" />
+                  <line x1="36" y1="150" x2="36" y2="30" style="stroke: var(--hairline);" stroke-width="1" />
+                  <path d="M 56,150 C 96,150 101,48 126,48 C 151,48 156,150 196,150" fill="none" style="stroke: var(--excitation);" stroke-width="2" />
+                  <path d="M 116,150 C 156,150 161,62 186,62 C 211,62 216,150 256,150" fill="none" style="stroke: var(--emission);" stroke-width="2" />
+                  <text x="88" y="42" text-anchor="middle" style="fill: var(--excitation); font-family: var(--mono); font-size: 9px;">absorption</text>
+                  <text x="226" y="57" text-anchor="start" style="fill: var(--emission); font-family: var(--mono); font-size: 9px;">emission</text>
+                  <line x1="126" y1="28" x2="186" y2="28" style="stroke: var(--muted);" stroke-width="1" />
+                  <polygon points="130,25 126,28 130,31" style="fill: var(--muted);" />
+                  <polygon points="182,25 186,28 182,31" style="fill: var(--muted);" />
+                  <text x="156" y="19" text-anchor="middle" class="fig-label">Stokes shift</text>
+                  <text x="320" y="166" text-anchor="end" class="fig-label">λ / nm</text>
+                  <text x="28" y="34" text-anchor="middle" class="fig-label">I</text>
+                </svg>
+                <figcaption>Mirror-image absorption and emission bands, separated by the Stokes shift.</figcaption>
+              </figure>
+            </details>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2" /><circle cx="5" cy="18" r="2" /><circle cx="12" cy="12" r="2" /><circle cx="19" cy="5" r="2" /><circle cx="19" cy="12" r="2" /><circle cx="19" cy="19" r="2" /><path d="M6.7 7.2 10.3 10.8M6.7 16.8 10.3 13.2M13.9 11 17.2 6M14 12h3M13.9 13 17.2 18" /></svg>
+            </div>
+            <h3>Machine Learning for Molecular Photophysics</h3>
+            <p>Data-driven models that predict optical properties of organic chromophores directly from molecular structure, comparing the performance of different ML approaches.</p>
+            <details>
+              <summary>Read more</summary>
+              <!-- TODO: replace placeholder writeup with your own words -->
+              <p>High-level methods such as TD-DFT are accurate but expensive, which limits how many candidate chromophores can be screened. The goal is a fast pre-screening layer that narrows the candidate space before committing to full quantum-chemical calculations or synthesis.</p>
+              <figure>
+                <svg viewBox="0 0 340 185" role="img" aria-label="Parity plot of machine-learning predicted versus TD-DFT computed emission wavelengths, with points close to the diagonal">
+                  <line x1="40" y1="150" x2="320" y2="150" style="stroke: var(--hairline);" stroke-width="1" />
+                  <line x1="40" y1="150" x2="40" y2="26" style="stroke: var(--hairline);" stroke-width="1" />
+                  <line x1="46" y1="147" x2="310" y2="34" style="stroke: var(--muted);" stroke-opacity="0.7" stroke-width="1" stroke-dasharray="4 4" />
+                  <text x="316" y="30" text-anchor="end" class="fig-label">y = x</text>
+                  <circle cx="66" cy="141" r="4" fill-opacity="0.85" style="fill: var(--emission);" />
+                  <circle cx="88" cy="126" r="4" fill-opacity="0.85" style="fill: var(--emission);" />
+                  <circle cx="112" cy="121" r="4" fill-opacity="0.85" style="fill: var(--emission);" />
+                  <circle cx="134" cy="106" r="4" fill-opacity="0.85" style="fill: var(--emission);" />
+                  <circle cx="158" cy="103" r="4" fill-opacity="0.85" style="fill: var(--emission);" />
+                  <circle cx="180" cy="86" r="4" fill-opacity="0.85" style="fill: var(--emission);" />
+                  <circle cx="205" cy="81" r="4" fill-opacity="0.85" style="fill: var(--emission);" />
+                  <circle cx="228" cy="66" r="4" fill-opacity="0.85" style="fill: var(--emission);" />
+                  <circle cx="252" cy="61" r="4" fill-opacity="0.85" style="fill: var(--emission);" />
+                  <circle cx="276" cy="46" r="4" fill-opacity="0.85" style="fill: var(--emission);" />
+                  <text x="320" y="166" text-anchor="end" class="fig-label">λ TD-DFT / nm</text>
+                  <text x="44" y="18" text-anchor="start" class="fig-label">λ ML / nm</text>
+                </svg>
+                <figcaption>Parity plot — ML-predicted vs TD-DFT-computed emission wavelengths.</figcaption>
+              </figure>
+            </details>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <a href="#">
-          <h3>Blog 2</h3>
-          <p class="meta">Date</p>
-          <p>To be updated.</p>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <h1>Get in Touch</h1>
-    <p class="subtitle">Collaborations, questions, or a simple hello</p>
-    <p style="color: var(--text-muted); margin-bottom: 0.5rem;">Reach me via email or academic profiles.</p>
-    <div class="contact-links">
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dhananjay.2301107005@cukerala.ac.in" target="_blank" rel="noopener">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
-        Email
-      </a>
-      <a href="https://orcid.org/0009-0006-6532-3726" target="_blank" rel="noopener">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" /></svg>
-        ORCID
-      </a>
-    </div>
-  </section>
+    <section id="education">
+      <div class="container">
+        <span class="section-label">Education</span>
+        <h2 class="section-title">Academic Background</h2>
+        <!-- TODO: fill in real degrees, institutions, and years -->
+        <ol class="timeline">
+          <li>
+            <p class="tl-date">2023 — Present</p>
+            <h3>PhD, Chemistry</h3>
+            <h4>Central University of Kerala · Functional Materials Laboratory</h4>
+            <p>Research focusing on computational techniques for materials discovery.</p>
+            <p>Supervisor: Dr. Ravi Kumar Kanaparthi</p>
+          </li>
+          <li>
+            <p class="tl-date">2021 — 2023</p>
+            <h3>M.Sc., Chemistry (Theoretical and Computational Chemistry)</h3>
+            <h4>Central University of Punjab</h4>
+            <p>Dissertation topic: Engineering the Properties of TiSeS Janus Monolayer Using Strain and Electric Field.</p>
+            <p>Supervisor: Prof. Jagdish Kumar</p>
+          </li>
+          <li>
+            <p class="tl-date">2017 — 2020</p>
+            <h3>B.Sc., Chemistry (Physical Sciences with Chemistry)</h3>
+            <h4>University of Delhi</h4>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="container">
+        <span class="section-label">Publications</span>
+        <h2 class="section-title">Journal Articles &amp; Reviews</h2>
+        <div class="pub-list">
+          <div class="pub-item">
+            <div class="pub-number">01</div>
+            <div>
+              <h3>Unravelling Cyanide Sensing Mechanisms of Colorimetric and Fluorometric Sensors</h3>
+              <p class="pub-meta">Gummadi Leela Prabha Anisha; Rayudu Surya Sekhar Babu; <b><i>Dhananjay</i></b>, Dr Ravi Kumar Kanaparthi* | NSRP-2025, Vol 37 / 1&amp;2 Page 63-69 Conference review (2025)</p>
+              <a class="pub-link" href="https://www.israps.org.in/uploads/bulletins/ISRAPS_Bulletin_2025_January_1765599706.pdf" target="_blank" rel="noopener">Read the article ↗</a>
+            </div>
+          </div>
+          <div class="pub-item">
+            <div class="pub-number">02</div>
+            <div>
+              <h3>Green hydrogen: The fuel of tomorrow or a challenge of today?</h3>
+              <p class="pub-meta">Gummadi Leela Prabha Anisha, Rayudu Surya Shekhar Babu, <b><i>Dhananjay</i></b>, Sudeena Nadendla, Shashidhar Kasthala, Ravi Kumar Kanaparthi. Next Energy, Volume 11, 2026, 100524, ISSN 2949-821X</p>
+              <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S2949821X26000141" target="_blank" rel="noopener">Read the article ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="conferences">
+      <div class="container">
+        <span class="section-label">Conferences</span>
+        <h2 class="section-title">Academic Engagements</h2>
+
+        <h3 class="group-heading">Talks</h3>
+        <!-- TODO: add invited talks / oral presentations here — copy a .conf-card from the groups below -->
+        <p class="empty-note">Invited talks and oral presentations will be listed here soon.</p>
+
+        <h3 class="group-heading">Posters</h3>
+        <div class="conf-grid">
+          <div class="conf-card">
+            <p class="conf-date">January 2026</p>
+            <h3>18th DAE-BRNS Biennial Trombay Symposium on Radiation and Photochemistry (TSRP-2026)</h3>
+            <p>Bhabha Atomic Research Centre, Mumbai · January 6th to 10th, 2026</p>
+            <p>Poster: "Data Driven Prediction of Optical Properties of Organic Chromophores: A Comparative Study of Different ML Models".</p>
+            <span class="conf-type contributed">Poster Presentation</span>
+          </div>
+          <div class="conf-card">
+            <p class="conf-date">January 2025</p>
+            <h3>National Symposium on Radiation and Photochemistry (NSRP-2025)</h3>
+            <p>National Institute of Science Education and Research (NISER), Bhubaneshwar · January 23rd to 25th, 2025</p>
+            <p>Poster: "Theoretical Exploration of Two-Dimensional Materials for Optical and Electrical Properties".</p>
+            <span class="conf-type contributed">Poster Presentation</span>
+          </div>
+        </div>
+
+        <h3 class="group-heading">Participation</h3>
+        <div class="conf-grid">
+          <div class="conf-card">
+            <p class="conf-date">December 2025</p>
+            <h3>Indian Council of Chemists 44th Annual National Conference</h3>
+            <p>KLE Technological University, Hubballi · December 22nd to 24th, 2025</p>
+            <span class="conf-type">Participant</span>
+          </div>
+          <div class="conf-card">
+            <p class="conf-date">August 2024</p>
+            <h3>International Symposium — Current Trends in Advanced Materials (CTAM-24)</h3>
+            <p>VIT-AP University, Amaravati, with the American Chemical Society · August 26th to 31st, 2024</p>
+            <a class="pub-link" href="assets/certificates/ctam-2024-participation.pdf" target="_blank" rel="noopener">Certificate ↗</a>
+            <span class="conf-type">Participant</span>
+          </div>
+          <div class="conf-card">
+            <p class="conf-date">August 2024</p>
+            <h3>Chemistry: Global Trends and Future Directions (CGTFD-2024)</h3>
+            <p>Virtual International Conference · Madanapalle Institute of Technology &amp; Science · August 5th to 7th, 2024</p>
+            <a class="pub-link" href="assets/certificates/cgtfd-2024-participation.pdf" target="_blank" rel="noopener">Certificate ↗</a>
+            <span class="conf-type">Participant</span>
+          </div>
+          <div class="conf-card">
+            <p class="conf-date">February 2024</p>
+            <h3>Theory and Applications of In-Silico Approach for Materials Modelling</h3>
+            <p>Central University of Punjab, Bathinda · February 5th to 11th, 2024</p>
+            <span class="conf-type">Participant</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <span class="section-label">Skills</span>
+        <h2 class="section-title">Instruments &amp; Methods</h2>
+        <!-- TODO: edit these chips to match your actual toolkit -->
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 19c2.5 0 2.5-11 5.5-11S10 16 12 16s1.5-6 3.5-6 2 9 6.5 9" /></svg>
+            </div>
+            <h3>Spectroscopy &amp; Characterization</h3>
+            <ul class="chips">
+              <li>UV–Vis absorption</li>
+              <li>Steady-state fluorescence</li>
+              <li>Lifetime fluorescence (TCSPC)</li>
+              <li>FTIR</li>
+              <li>NMR</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5" /><line x1="12" y1="19" x2="20" y2="19" /></svg>
+            </div>
+            <h3>Computational</h3>
+            <ul class="chips">
+              <li>DFT / TD-DFT</li>
+              <li>Machine learning</li>
+              <li>Python</li>
+              <li>VIM</li>
+              <li>Bash</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v6L4.7 18.4A2 2 0 0 0 6.5 21h11a2 2 0 0 0 1.8-2.6L14 8V2" /><path d="M8.5 2h7" /><path d="M7.2 15h9.6" /></svg>
+            </div>
+            <h3>Synthesis</h3>
+            <ul class="chips">
+              <li>Organic chromophore synthesis</li>
+              <li>Purification &amp; chromatography</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog">
+      <div class="container">
+        <span class="section-label">Blog</span>
+        <h2 class="section-title">Notes &amp; Updates</h2>
+        <div class="card-grid">
+          <div class="blog-card">
+            <a href="#blog">
+              <h3>Why fluorescent materials matter</h3>
+              <p class="meta">Date</p>
+              <p>Coming soon.</p>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="#blog">
+              <h3>Blog 2</h3>
+              <p class="meta">Date</p>
+              <p>To be updated.</p>
+            </a>
+          </div>
+        </div>
+
+        <h3 class="group-heading">The Jablonski Series — Three Ways a Molecule Glows</h3>
+        <!-- rendered with manim — source: assets/media/jablonski.py -->
+        <div class="jablonski-grid">
+          <figure class="jablonski">
+            <video src="assets/media/fluorescence.mp4" controls muted loop playsinline preload="none"
+                   aria-label="Animated Jablonski diagram of fluorescence: a photon is absorbed to S2, relaxes to S1 by internal conversion, and returns to S0 by emitting light"></video>
+            <figcaption>Fluorescence — prompt emission from S₁</figcaption>
+          </figure>
+          <figure class="jablonski">
+            <video src="assets/media/phosphorescence.mp4" controls muted loop playsinline preload="none"
+                   aria-label="Animated Jablonski diagram of phosphorescence: after absorption, intersystem crossing populates the long-lived triplet T1, which slowly emits light back to S0"></video>
+            <figcaption>Phosphorescence — slow emission from the triplet T₁</figcaption>
+          </figure>
+          <figure class="jablonski">
+            <video src="assets/media/tadf.mp4" controls muted loop playsinline preload="none"
+                   aria-label="Animated Jablonski diagram of thermally activated delayed fluorescence: a small singlet-triplet gap lets heat drive reverse intersystem crossing from T1 back to S1, giving delayed emission"></video>
+            <figcaption>TADF — heat drives T₁ back to S₁ for delayed emission</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <span class="section-label">Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-desc">Collaborations, questions, or a simple hello — I welcome discussions on fluorescent materials, photophysics, and machine learning for chemistry.</p>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
+            </div>
+            <div>
+              <p class="contact-label">Email</p>
+              <p><a href="mailto:dhananjay.2301107005@cukerala.ac.in" target="_blank" rel="noopener">dhananjay.2301107005@cukerala.ac.in</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" /></svg>
+            </div>
+            <div>
+              <p class="contact-label">Laboratory</p>
+              <p>Functional Materials Laboratory<br />Central University of Kerala<br />Kasaragod, Kerala</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z" /></svg>
+            </div>
+            <div>
+              <p class="contact-label">Academic Profile</p>
+              <p><a href="https://orcid.org/0009-0006-6532-3726" target="_blank" rel="noopener">ORCID 0009-0006-6532-3726</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/dhananjay-7b0372221" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
+            LinkedIn
+          </a>
+          <a href="https://x.com/dhananjay3455" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
+            Twitter / X
+          </a>
+          <a href="https://substack.com/@dhannoranger" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" /></svg>
+            Substack
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
-    <p>Central University of Kerala · Fluorescent Materials Research</p>
+    <div class="container">
+      <p>© 2026 Dhananjay · Functional Materials Laboratory, Central University of Kerala</p>
+      <div class="footer-links">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
   </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
 
   <script>
     (function () {
-      const sections = document.querySelectorAll('section');
-      const navLinks = document.querySelectorAll('nav a');
-      const nav = document.getElementById('nav');
-      const themeToggle = document.getElementById('theme-toggle');
-      const THEME_KEY = 'phd-site-theme';
+      var sections = document.querySelectorAll('main > section');
+      var navLinks = document.querySelectorAll('.nav-links a');
+      var navbar = document.getElementById('navbar');
+      var navPanel = document.getElementById('nav-links');
+      var hamburger = document.getElementById('hamburger');
+      var scrollTopBtn = document.getElementById('scroll-top');
+      var jbVideos = document.querySelectorAll('.jablonski video');
+      var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var scrollMode = reduced ? 'auto' : 'smooth';
 
-      function getStoredTheme() {
-        try {
-          return localStorage.getItem(THEME_KEY);
-        } catch (e) {
-          return null;
+      /* Hash router: no hash → hero (home); #id → that section replaces the hero */
+      var hero = document.querySelector('.hero');
+      function show(hash) {
+        var id = (hash || '').replace('#', '');
+        var target = id ? document.getElementById(id) : null;
+        if (target && target.closest('main') === null) target = null;
+        hero.classList.toggle('hidden', !!target);
+        /* repair the canvas if it was zero-sized by a resize while hidden */
+        if (!target && canvas && canvas.width === 0) {
+          sizeCanvas();
+          initNodes();
+          if (reduced) draw(0);
         }
-      }
-
-      function setTheme(theme) {
-        const next = theme === 'light' ? 'light' : 'dark';
-        if (next === 'light') {
-          document.documentElement.setAttribute('data-theme', 'light');
-        } else {
-          document.documentElement.removeAttribute('data-theme');
-        }
-        try {
-          localStorage.setItem(THEME_KEY, next);
-        } catch (e) {}
-      }
-
-      function initTheme() {
-        const stored = getStoredTheme();
-        if (stored === 'light') {
-          document.documentElement.setAttribute('data-theme', 'light');
-        } else {
-          document.documentElement.removeAttribute('data-theme');
-        }
-      }
-
-      if (themeToggle) {
-        themeToggle.addEventListener('click', function () {
-          const isLight = document.documentElement.getAttribute('data-theme') === 'light';
-          setTheme(isLight ? 'dark' : 'light');
+        sections.forEach(function (s) {
+          s.classList.toggle('current', s === target);
         });
-      }
-
-      initTheme();
-
-      function setActiveLink() {
-        const scrollY = window.scrollY;
-        let current = '';
-        sections.forEach(function (section) {
-          const top = section.offsetTop - 120;
-          const height = section.offsetHeight;
-          if (scrollY >= top && scrollY < top + height) current = section.getAttribute('id');
+        /* videos load lazily and only run while the Blog view is open */
+        jbVideos.forEach(function (v) {
+          if (target && target.id === 'blog' && !reduced) {
+            v.play().catch(function () {});
+          } else {
+            v.pause();
+          }
         });
         navLinks.forEach(function (a) {
-          a.classList.remove('active');
-          if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+          var active = target && a.getAttribute('href') === '#' + target.id;
+          a.classList.toggle('active', !!active);
+          if (active) a.setAttribute('aria-current', 'page');
+          else a.removeAttribute('aria-current');
         });
+        window.scrollTo(0, 0);
       }
 
-      function reveal() {
-        sections.forEach(function (section) {
-          const top = section.getBoundingClientRect().top;
-          const win = window.innerHeight;
-          if (top < win * 0.85) section.classList.add('visible');
+      window.addEventListener('hashchange', function () {
+        show(location.hash);
+      });
+      show(location.hash);
+
+      /* Close the mobile menu when a link is chosen */
+      navLinks.forEach(function (a) {
+        a.addEventListener('click', function () {
+          navPanel.classList.remove('open');
+          hamburger.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', 'false');
         });
+      });
+
+      hamburger.addEventListener('click', function () {
+        var open = navPanel.classList.toggle('open');
+        hamburger.classList.toggle('open', open);
+        hamburger.setAttribute('aria-expanded', String(open));
+      });
+
+      /* Navbar blur + scroll-top visibility */
+      function onScroll() {
+        navbar.classList.toggle('scrolled', window.scrollY > 60);
+        scrollTopBtn.classList.toggle('show', window.scrollY > 500);
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      scrollTopBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: scrollMode });
+      });
+
+      /* Hero canvas: drifting molecular network with fluorescing nodes */
+      var canvas = document.getElementById('mol-canvas');
+      var ctx = canvas.getContext('2d');
+      var nodes = [];
+      var LINK = 150;
+
+      function sizeCanvas() {
+        var dpr = window.devicePixelRatio || 1;
+        canvas.width = canvas.offsetWidth * dpr;
+        canvas.height = canvas.offsetHeight * dpr;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       }
 
-      window.addEventListener('scroll', function () {
-        setActiveLink();
-        reveal();
-      });
-      window.addEventListener('load', function () {
-        setActiveLink();
-        reveal();
-      });
+      function initNodes() {
+        var W = canvas.offsetWidth, H = canvas.offsetHeight;
+        var count = W < 640 ? 26 : 46;
+        nodes = [];
+        for (var i = 0; i < count; i++) {
+          nodes.push({
+            x: Math.random() * W,
+            y: Math.random() * H,
+            vx: (Math.random() - 0.5) * 0.25,
+            vy: (Math.random() - 0.5) * 0.25,
+            glow: Math.random() < 0.22
+          });
+        }
+      }
 
-      /* Custom cursor glow – light blue transparent ring; only on devices with hover */
-      (function () {
-        const glow = document.getElementById('cursor-glow');
-        if (!glow || !window.matchMedia('(hover: hover)').matches) return;
+      /* colors follow the active theme */
+      function palette() {
+        return document.documentElement.getAttribute('data-theme') === 'light'
+          ? { glow: '11, 130, 89', plain: '82, 102, 97' }
+          : { glow: '60, 232, 143', plain: '142, 163, 184' };
+      }
 
-        let x = 0, y = 0;
-        let raf = 0;
-
-        function updatePosition(e) {
-          x = e.clientX;
-          y = e.clientY;
-          if (!raf) {
-            raf = requestAnimationFrame(function () {
-              glow.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
-              raf = 0;
-            });
+      function draw(t) {
+        var W = canvas.offsetWidth, H = canvas.offsetHeight;
+        var pal = palette();
+        ctx.clearRect(0, 0, W, H);
+        var i, j, a, b, d, alpha;
+        for (i = 0; i < nodes.length; i++) {
+          a = nodes[i];
+          a.x += a.vx; a.y += a.vy;
+          if (a.x < -10) a.x = W + 10; else if (a.x > W + 10) a.x = -10;
+          if (a.y < -10) a.y = H + 10; else if (a.y > H + 10) a.y = -10;
+        }
+        for (i = 0; i < nodes.length; i++) {
+          for (j = i + 1; j < nodes.length; j++) {
+            a = nodes[i]; b = nodes[j];
+            d = Math.hypot(a.x - b.x, a.y - b.y);
+            if (d < LINK) {
+              alpha = (1 - d / LINK) * 0.22;
+              ctx.strokeStyle = (a.glow || b.glow)
+                ? 'rgba(' + pal.glow + ', ' + alpha + ')'
+                : 'rgba(' + pal.plain + ', ' + alpha * 0.8 + ')';
+              ctx.lineWidth = 1;
+              ctx.beginPath();
+              ctx.moveTo(a.x, a.y);
+              ctx.lineTo(b.x, b.y);
+              ctx.stroke();
+            }
           }
         }
+        for (i = 0; i < nodes.length; i++) {
+          a = nodes[i];
+          ctx.beginPath();
+          if (a.glow) {
+            ctx.fillStyle = 'rgba(' + pal.glow + ', 0.85)';
+            ctx.arc(a.x, a.y, 2.2, 0, Math.PI * 2);
+          } else {
+            ctx.fillStyle = 'rgba(' + pal.plain + ', 0.5)';
+            ctx.arc(a.x, a.y, 1.6, 0, Math.PI * 2);
+          }
+          ctx.fill();
+        }
+      }
 
-        document.addEventListener('mousemove', updatePosition, { passive: true });
-      })();
+      function loop(t) {
+        if (canvas.offsetParent !== null) draw(t);
+        requestAnimationFrame(loop);
+      }
+
+      sizeCanvas();
+      initNodes();
+      if (reduced) {
+        draw(0);
+      } else {
+        requestAnimationFrame(loop);
+      }
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function () {
+          sizeCanvas();
+          initNodes();
+          if (reduced) draw(0);
+        }, 150);
+      });
+
+      /* Theme toggle: dark is the default; "light" is the stored override */
+      var themeToggle = document.getElementById('theme-toggle');
+      var THEME_KEY = 'phd-site-theme';
+
+      function setTheme(theme) {
+        if (theme === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+        try { localStorage.setItem(THEME_KEY, theme); } catch (e) {}
+        if (reduced) draw(0);
+      }
+
+      try {
+        if (localStorage.getItem(THEME_KEY) === 'light') setTheme('light');
+      } catch (e) {}
+
+
+      themeToggle.addEventListener('click', function () {
+        var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+        setTheme(isLight ? 'dark' : 'light');
+      });
     })();
   </script>
 </body>
