@@ -39,6 +39,7 @@
         <a href="#conferences">Conferences</a>
         <a href="#skills">Skills</a>
         <a href="#blog">Blog</a>
+        <a href="#books">Books</a>
         <a href="#contact">Contact</a>
       </div>
       <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
@@ -404,21 +405,12 @@
       <div class="container">
         <span class="section-label">Blog</span>
         <h2 class="section-title">Notes &amp; Updates</h2>
-        <div class="card-grid">
-          <div class="blog-card">
-            <a href="#blog">
-              <h3>Why fluorescent materials matter</h3>
-              <p class="meta">Date</p>
-              <p>Coming soon.</p>
-            </a>
-          </div>
-          <div class="blog-card">
-            <a href="#blog">
-              <h3>Blog 2</h3>
-              <p class="meta">Date</p>
-              <p>To be updated.</p>
-            </a>
-          </div>
+        <p class="section-desc">I write at Substack — notes on fluorescence, chemistry, and research life.</p>
+        <div class="social-row">
+          <a href="https://substack.com/@dhannoranger" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" /></svg>
+            Read on Substack
+          </a>
         </div>
 
         <h3 class="group-heading">The Jablonski Series — Three Ways a Molecule Glows</h3>
@@ -439,6 +431,53 @@
                    aria-label="Animated Jablonski diagram of thermally activated delayed fluorescence: a small singlet-triplet gap lets heat drive reverse intersystem crossing from T1 back to S1, giving delayed emission"></video>
             <figcaption>TADF — heat drives T₁ back to S₁ for delayed emission</figcaption>
           </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- reuses the .conf-grid / .conf-card / .group-heading styling from Conferences -->
+    <section id="books">
+      <div class="container">
+        <span class="section-label">Books</span>
+        <h2 class="section-title">What I'm Reading</h2>
+
+        <h3 class="group-heading">Currently Reading</h3>
+        <!-- to add a book: copy a .conf-card — .conf-date is the author, h3 the title -->
+        <div class="conf-grid">
+          <div class="conf-card book-card">
+            <img src="assets/images/books/american-prometheus.jpg" alt="Cover of American Prometheus" loading="lazy" onerror="this.remove()" />
+            <div class="book-text">
+              <p class="conf-date">Kai Bird &amp; Martin J. Sherwin</p>
+              <h3>American Prometheus</h3>
+              <p>The life of J. Robert Oppenheimer.</p>
+              <p class="book-progress">
+                <progress value="30" max="100" aria-label="Reading progress">30%</progress>
+                <span>30% through</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="group-heading">Read</h3>
+        <div class="conf-grid">
+          <div class="conf-card book-card">
+            <img src="assets/images/books/sky-warriors.webp" alt="Cover of The Sky Warriors" loading="lazy" onerror="this.remove()" />
+            <div class="book-text">
+              <p class="conf-date">Vishnu Som</p>
+              <h3>The Sky Warriors</h3>
+              <p>An account of Operation Sindoor that goes past what the media reported, and takes the trouble to explain the technology the operation actually ran on.</p>
+              <span class="conf-type">Finished 2026</span>
+            </div>
+          </div>
+          <div class="conf-card book-card">
+            <img src="assets/images/books/brief-answers.jpg" alt="Cover of Brief Answers to the Big Questions" loading="lazy" onerror="this.remove()" />
+            <div class="book-text">
+              <p class="conf-date">Prof. Stephen Hawking</p>
+              <h3>Brief Answers to the Big Questions</h3>
+              <p>Enormous questions handled in plain language, that even a layman can understand.</p>
+              <span class="conf-type">Finished 2025</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
